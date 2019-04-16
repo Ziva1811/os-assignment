@@ -57,14 +57,14 @@ for(i=1;i<=n-1;i++)
         avg_tat = ((float)sum_tat)/((float)n);  // Calculating average turn around time
         
            
-        printf("Procees no.\tBurst Time\tWaiting Time\tTurn around Time\n");
+        printf("Procees no.\tBurst Time(ms)\tWaiting Time(ms)\tTurn around Time(ms)\n");
         for(i=0;i<n;i++)
         {
-            printf("\t%d\t\t%d\t\t%d\t\t%d\n",i,bt[i],wt[i],tat[i]);
+            printf("\t%d\t\t%d\t\t%d\t\t%d\n",i+1,bt[i],wt[i],tat[i]);
 		}
 		
-		printf("\nAverage waiting time: %f\n",avg_wt);
-		printf("\nAverage turn around time: %f",avg_tat);
+		printf("\nAverage waiting time: %f(ms)\n",avg_wt);
+		printf("\nAverage turn around time: %f(ms)",avg_tat);
 		
          fclose(fp);    // Closing file
           
