@@ -8,11 +8,8 @@ the teacher on completion. This cycle continues. WAP to synchronise the teacher 
 
 
 #include <pthread.h> 
-#include <semaphore.h> 
 #include <stdio.h> 
-#include<sys/types.h>
 #include<stdlib.h>
-#include<unistd.h>
 
 void *fun1(void *receive); //declaring functions
 void *fun2(void *receive);
